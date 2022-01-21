@@ -11315,3 +11315,69 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+
+#menu ul li {
+    background-color: white;
+}
+
+#menu ul {
+  z-index: 1000;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#menu ul a {
+  display:block;
+  color:var(--bs-body-color);
+  text-decoration:none;
+  font-weight:var(--bs-body-font-weight);
+  font-size:var(--bs-body-font-size);
+  padding:20px;
+  font-family:--bs-body-font-family;
+  letter-spacing:1px;
+}
+
+#menu ul li {
+  position:relative;
+  float:left;
+  margin:10px;
+  padding: 2px;;
+}
+
+#menu ul li:hover {
+  background:whitesmoke;
+}
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+
+#menu ul ul li {
+  float:none;
+  width:150px
+}
+
+#menu ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+#menu ul li:hover > ul {
+  display:block;
+}
+
+label {
+    display: block;
+    font: 1rem var(--bs-body-font-family), sans-serif;
+}
+
+input,
+label {
+    margin: 10px;
+    padding: 2px;
+}
