@@ -64,10 +64,18 @@
   --bs-body-bg: #fff;
 }
 
-                                                                    /*fuentes*/
-                                                                     /*fuentes*/
-                                                                      /*fuentes*/
-                                                                       /*fuentes*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+                                                    /*fuentes*/
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
