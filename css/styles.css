@@ -87,6 +87,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 hr {
@@ -228,7 +229,7 @@ textarea {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -247,6 +248,11 @@ textarea {
 .figure-caption {
   font-size: 0.875em;
   color: #6c757d;
+}
+
+.logo{
+  padding: 2%;
+  padding-top: 4%;
 }
 
 .container,
@@ -812,6 +818,13 @@ textarea {
   background-size: 100%;
 }
 
+
+.btn {
+  font-size: 30px;
+  border:rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: red;
+}
 .navbar-nav-scroll {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;
@@ -1212,7 +1225,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 #menu ul li {
-    background-color: white;
+    background-color: black;
 }
 
 #menu ul {
@@ -1236,9 +1249,17 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 #menu ul li {
   position:relative;
   float:left;
-  margin:10px;
-  padding: 2px;;
+  margin:0;
+  padding: 2px;
+  padding-left: 15px;
 }
+
+/*#menu ul {
+  position:relative;
+  float:left;
+  margin:10px;
+  padding: 2px;
+}*/
 
 #menu ul li:hover {
   background:whitesmoke;
@@ -1258,7 +1279,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 #menu ul ul a {
-  line-height:120%;
+  line-height:0%;
   padding:10px 15px;
 }
 
@@ -1271,10 +1292,21 @@ label {
     font: 1rem var(--bs-body-font-family), sans-serif;
 }
 
-input,
+input {
+  padding: 2px;
+  margin-left: 15px;
+  padding-left: 15px;
+  background-color: black;
+  color: white;
+}
+
 label {
-    margin: 10px;
     padding: 2px;
+    padding-left: 15px;
+
+    padding-top: 2.5em;
+    background-color: black;
+    color: white;
 }
 
                                                     /*posicion de texto*/
@@ -1383,6 +1415,7 @@ label {
   
   .d-flex {
     display: flex !important;
+    background-color: black;
   }
   
   .d-inline-flex {
@@ -1437,22 +1470,6 @@ label {
     border-right: 0 !important;
   }
   
-  .border-bottom {
-    border-bottom: 1px solid #dee2e6 !important;
-  }
-  
-  .border-bottom-0 {
-    border-bottom: 0 !important;
-  }
-  
-  .border-start {
-    border-left: 1px solid #dee2e6 !important;
-  }
-  
-  .border-start-0 {
-    border-left: 0 !important;
-  }
-  
   .border-primary {
     border-color: #0d6efd !important;
   }
@@ -1464,51 +1481,6 @@ label {
   .border-success {
     border-color: #198754 !important;
   }
-  
-  .border-info {
-    border-color: #0dcaf0 !important;
-  }
-  
-  .border-warning {
-    border-color: #ffc107 !important;
-  }
-  
-  .border-danger {
-    border-color: #dc3545 !important;
-  }
-  
-  .border-light {
-    border-color: #f8f9fa !important;
-  }
-  
-  .border-dark {
-    border-color: #212529 !important;
-  }
-  
-  .border-white {
-    border-color: #fff !important;
-  }
-  
-  .border-1 {
-    border-width: 1px !important;
-  }
-  
-  .border-2 {
-    border-width: 2px !important;
-  }
-  
-  .border-3 {
-    border-width: 3px !important;
-  }
-  
-  .border-4 {
-    border-width: 4px !important;
-  }
-  
-  .border-5 {
-    border-width: 5px !important;
-  }
-  
                                                     /*margen superior de descripcion*/
   .mt-0 {
     margin-top: 0 !important;
@@ -1818,4 +1790,12 @@ label {
     border-left-width: 1px;
   }
   
+  .highcharts-figure {
+    min-width: 360px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
   
+  #container {
+    height: 500px;
+  }
